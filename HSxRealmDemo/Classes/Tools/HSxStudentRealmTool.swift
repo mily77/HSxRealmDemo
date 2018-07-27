@@ -124,7 +124,7 @@ extension HSxStudentRealmTool {
     // 配置数据库
     public class func configRealm() {
         // 如果要存储的数据模型属性发生变化，需要配置当前版本号比之前大
-        let dbVersion : UInt64 = 2
+        let dbVersion : UInt64 = 1
         let docPatch = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0] as String
         let dbPath = docPatch.appending("/defaultDB.realm")
         let config = Realm.Configuration(fileURL: URL.init(string: dbPath), inMemoryIdentifier: nil, syncConfiguration: nil, encryptionKey: nil, readOnly: false, schemaVersion: dbVersion, migrationBlock: { (migration, oldSchemaVersion) in

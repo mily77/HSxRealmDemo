@@ -12,36 +12,36 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        testInsterStudent()
-        //        testInsertStudentWithPhotoBook()
-        //        testInsertManyStudent()
-        //  查询数据库中所有学生模型并输出姓名，图片，所拥有的书信息
-        //        let stus = HSxStudentRealmTool.getStudents()
-        //        for stu in stus {
-        //            print(stu.name)
-        //
-        //            if stu.books.count > 0 {
-        //                for book in stu.books {
-        //                    print(book.name + "+" + book.author)
-        //                }
-        //            }
-        //        }
-        //
-        //        //通过主键查询
-        //        let student = HSxStudentRealmTool.getStudent(from: 25)
-        //        if let studentL = student {
-        //            print(studentL.name)
-        //        }
-        //
-        //        // 条件查询
-        //        let students = HSxStudentRealmTool.getStudentByTerm("name = '嘻嘻_10'")
-        //        if students.count == 0 {
-        //            print("未查询到任何数据")
-        //            return
-        //        }
-        //        for student in students {
-        //            print(student.name,student.weight)
-        //        }
+//        testInsterStudent()
+//        testInsertStudentWithPhotoBook()
+//        testInsertManyStudent()
+//  查询数据库中所有学生模型并输出姓名，图片，所拥有的书信息
+//        let stus = HSxStudentRealmTool.getStudents()
+//        for stu in stus {
+//            print(stu.name)
+//
+//            if stu.books.count > 0 {
+//                for book in stu.books {
+//                    print(book.name + "+" + book.author)
+//                }
+//            }
+//        }
+//
+//        //通过主键查询
+//        let student = HSxStudentRealmTool.getStudent(from: 25)
+//        if let studentL = student {
+//            print(studentL.name)
+//        }
+//
+//        // 条件查询
+//        let students = HSxStudentRealmTool.getStudentByTerm("name = '嘻嘻_10'")
+//        if students.count == 0 {
+//            print("未查询到任何数据")
+//            return
+//        }
+//        for student in students {
+//            print(student.name,student.weight)
+//        }
         
         
     }
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
             stu.age = i+10
             stu.id = i;
             // 头像
-            //            stu.setPhotoWitName("cat")
+            // stu.setPhotoWitName("cat")
             let birthdayStr = "1993-06-10"
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "YYYY-MM-dd"
